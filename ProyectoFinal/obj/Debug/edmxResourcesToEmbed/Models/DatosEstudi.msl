@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DemoVideoModel3StoreContainer" CdmEntityContainer="DemoVideoEntities5">
+    <EntitySetMapping Name="datosEstudiantes">
+      <EntityTypeMapping TypeName="DemoVideoModel3.datosEstudiantes">
+        <MappingFragment StoreEntitySet="datosEstudiantes">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Asignaturas" ColumnName="Asignaturas" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

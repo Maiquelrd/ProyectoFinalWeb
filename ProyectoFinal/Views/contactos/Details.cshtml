@@ -1,0 +1,142 @@
+﻿@model ProyectoFinal.Models.contactos
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Datos del Socio</h2>
+
+<div>
+    <h4>Socio</h4>
+    <hr />
+    <dl class="dl-horizontal">
+       
+                <dt>
+                    @Html.DisplayNameFor(model => model.Nombre)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Nombre)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Apellido)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Apellido)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Cedula)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Cedula)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Foto)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Foto)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Direccion)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Direccion)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Telefono)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Telefono)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Sexo)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Sexo)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Edad)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Edad)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.FNacimiento)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.FNacimiento)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Afiliados)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Afiliados)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.MembresiaD)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.MembresiaD)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.TrabajoL)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.TrabajoL)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.DireccionOfi)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.DireccionOfi)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.TelOficina)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.TelOficina)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.EstadoMenbresia)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.EstadoMenbresia)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.FIngreso)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.FIngreso)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.FSalida)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.FSalida)
+                </dd>
+
+    </dl>
+            
+</div>
+<p>
+    @Html.ActionLink("Modificar", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Volver al Registro", "Index")
+</p>

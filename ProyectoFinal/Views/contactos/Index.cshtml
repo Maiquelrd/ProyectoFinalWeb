@@ -1,0 +1,96 @@
+﻿@model IEnumerable<ProyectoFinal.Models.contactos>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Socios</h2>
+
+<p>
+    @Html.ActionLink("Registrar Socio", "Create")
+</p>
+
+<form  action="contactos/Buscar"  method="post">
+    <p>
+       Buscar: <input type="text" name="nombre" id="nombre">
+        <input type="submit" value="Buscar" />
+    </p>
+</form>
+<hr />
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Apellido)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cedula)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Direccion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Telefono)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sexo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Edad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FNacimiento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Afiliados)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EstadoMenbresia)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Apellido)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cedula)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Direccion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Telefono)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sexo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Edad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FNacimiento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Afiliados)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EstadoMenbresia)
+        </td>
+        <td>
+            @Html.ActionLink("Modificar", "Edit", new { id = item.ID }) |
+            @Html.ActionLink("Ver Datos", "Details", new { id = item.ID }) |
+            @Html.ActionLink("Eliminar", "Delete", new { id = item.ID })
+        </td>
+    </tr>
+    }
+
+</table>
